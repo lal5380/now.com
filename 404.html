@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+        var path = window.location.pathname;
+        var redirects = {
+            "/about": "/about.html",
+            // Add more redirects as needed
+        };
+
+        if (redirects[path]) {
+            window.location.replace(redirects[path]);
+        } else {
+            document.write("Page not found.");
+        }
+    </script>
+</head>
+<body>
+    <h1>404</h1>
+    <p>404 file not found</p>
+</body>
+</html>
